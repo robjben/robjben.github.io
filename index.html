@@ -32,7 +32,7 @@
     <div id="sidebar">
         <h2></h2>
         <select id="functionMenu">
-            <option value="">Start</option>
+            <option value="Launch">Let's Get Started</option>
             <option value="Function1">Home</option>
             <option value="Function2">Candles</option>
             <option value="Function3">About</option>
@@ -42,5 +42,14 @@
         <h1>Welcome to Horse-Drawn Candle Co</h1>
         <p>This is the main content of the page.</p>
     </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.body.insertAdjacentHTML('afterbegin', data);
+      });
+  });
+</script>
 </body>
 </html>
