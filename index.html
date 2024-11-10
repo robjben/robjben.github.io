@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div id="sidebar">
+        <h2>Functions</h2>
+        <select id="functionMenu">
+            <option value="">Select a function</option>
+            <option value="function1">Function 1</option>
+            <option value="function2">Function 2</option>
+            <option value="function3">Function 3</option>
+        </select>
+    </div>
+    <div id="content">
+        <h1>Welcome to My Simple Website</h1>
+        <p>This is the main content of the page.</p>
+    </div>
 </body>
 </html>
